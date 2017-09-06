@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+<div id="box-right">
+    <h4>Login</h4>
+        <form action="" method="POST">
+            Username:
+            <input type="text" name="login" autocomplete="off">
+            Password:
+            <input type="password" name="password"><br><br>
+            <input type="submit" value="Log in">
+        </form>
+        New account:<br>
+        <a href="{{ path('register') }}">Register</a>
+</div>
+<div id="box-left">
+    <h1>Welcome!</h1>
+    <p>Welcome to our new website!</p>
+</div>
+{% endblock %}
+

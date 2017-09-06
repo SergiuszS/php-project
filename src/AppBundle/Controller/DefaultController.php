@@ -14,10 +14,19 @@ class DefaultController extends Controller
     public function defaultAction()
     {
         
-        return $this->render('default/index.html.twig', array(
+        return $this->render('default/login.html.twig', array(
             'test' => 'test')
         );
     }
-
+     /**
+     * @Route("/register", name = "register")
+     */
+     public function registerAction()
+     {
+         
+         return $this->render('default/register.html.twig', array(
+             'test' => 'test')
+         );
+    }
 
 }
